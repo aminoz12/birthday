@@ -44,7 +44,7 @@ export default function AudioPlayer({
 
     audio.addEventListener('ended', handleEnded);
     return () => audio.removeEventListener('ended', handleEnded);
-  }, [autoplay, currentVolume, isMuted, onEnded]);
+  }, [autoplay, currentVolume, isMuted]);
 
   const togglePlay = () => {
     const audio = audioRef.current;

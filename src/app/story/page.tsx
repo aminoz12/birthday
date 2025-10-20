@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 import MemoryGallery from '@/components/MemoryGallery';
 import AudioPlayer from '@/components/AudioPlayer';
 import Fireworks from '@/components/Fireworks';
@@ -256,7 +257,6 @@ export default function StoryPage() {
   const [showGift, setShowGift] = useState(false);
   const [showVoiceMessage, setShowVoiceMessage] = useState(false);
   const [backgroundMusicVolume, setBackgroundMusicVolume] = useState(0.3);
-  const { scrollYProgress } = useScroll();
 
   const handleBirthdayClick = () => {
     setShowFireworks(true);
@@ -532,9 +532,11 @@ export default function StoryPage() {
                   whileHover={{ scale: 1.05 }}
                   className="relative overflow-hidden rounded-2xl shadow-lg"
                 >
-                  <img 
+                  <Image 
                     src="/image12.jpeg" 
                     alt="First meeting" 
+                    width={400}
+                    height={320}
                     className="w-full h-80 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
@@ -612,9 +614,11 @@ export default function StoryPage() {
                     whileHover={{ scale: 1.05 }}
                     className="relative overflow-hidden rounded-xl shadow-lg"
                   >
-                    <img 
+                    <Image 
                       src="/baby1.jpeg" 
                       alt="Baby photo 1" 
+                      width={300}
+                      height={192}
                       className="w-full h-48 object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
@@ -631,9 +635,11 @@ export default function StoryPage() {
                     whileHover={{ scale: 1.05 }}
                     className="relative overflow-hidden rounded-xl shadow-lg"
                   >
-                    <img 
+                    <Image 
                       src="/baby2.jpeg" 
                       alt="Baby photo 2" 
+                      width={300}
+                      height={192}
                       className="w-full h-48 object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
@@ -650,9 +656,11 @@ export default function StoryPage() {
                     whileHover={{ scale: 1.05 }}
                     className="relative overflow-hidden rounded-xl shadow-lg"
                   >
-                    <img 
+                    <Image 
                       src="/baby3.jpeg" 
                       alt="Baby photo 3" 
+                      width={300}
+                      height={128}
                       className="w-full h-32 object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
@@ -669,9 +677,11 @@ export default function StoryPage() {
                     whileHover={{ scale: 1.05 }}
                     className="relative overflow-hidden rounded-xl shadow-lg"
                   >
-                    <img 
+                    <Image 
                       src="/baby4.jpeg" 
                       alt="Baby photo 4" 
+                      width={300}
+                      height={128}
                       className="w-full h-32 object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
@@ -707,9 +717,9 @@ export default function StoryPage() {
                   </h3>
                   
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    No matter how old you get, you'll always be my little baby. 
-                    I'll always be here to protect you, love you, and take care of you. 
-                    You're my precious little one, and that will never change.
+                    No matter how old you get, you&apos;ll always be my little baby. 
+                    I&apos;ll always be here to protect you, love you, and take care of you. 
+                    You&apos;re my precious little one, and that will never change.
                   </p>
                   
                   <motion.div
@@ -886,9 +896,11 @@ export default function StoryPage() {
                 </h3>
                 
                 <div className="bg-gradient-to-r from-pink-100 to-yellow-100 rounded-2xl p-6 mb-6">
-                  <img 
+                  <Image 
                     src="/unnamed.jpg" 
                     alt="Gift Card" 
+                    width={400}
+                    height={300}
                     className="w-full max-w-md mx-auto rounded-xl shadow-lg mb-6"
                   />
                   
