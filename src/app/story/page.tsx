@@ -2,11 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import NeonText from '@/components/NeonText';
 import MemoryGallery from '@/components/MemoryGallery';
 import AudioPlayer from '@/components/AudioPlayer';
 import Fireworks from '@/components/Fireworks';
-import { Heart, Sparkles, Camera, MessageCircle, Cake } from 'lucide-react';
 
 // All 40 WhatsApp images for our best memories
 const memories = [
@@ -258,9 +256,7 @@ export default function StoryPage() {
   const [showGift, setShowGift] = useState(false);
   const [showVoiceMessage, setShowVoiceMessage] = useState(false);
   const [backgroundMusicVolume, setBackgroundMusicVolume] = useState(0.3);
-  const [heroVoiceStarted, setHeroVoiceStarted] = useState(false);
   const { scrollYProgress } = useScroll();
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
 
   const handleBirthdayClick = () => {
     setShowFireworks(true);
@@ -282,10 +278,6 @@ export default function StoryPage() {
     setShowGift(true);
   };
 
-  const handleVoiceMessageStart = () => {
-    // Lower background music to 20% when voice starts
-    setBackgroundMusicVolume(0.2);
-  };
 
   const handleVoiceMessageEnd = () => {
     setShowVoiceMessage(false);
@@ -529,7 +521,7 @@ export default function StoryPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  It was a beautiful Summer day at August when our paths first crossed. Seftnaalk Follow Yalala ou Tjebdti 3linaa , ou dernaalk story reply o zedti tjebdti elinaaaaaa , BUT ZNASNI NEVER GIVE UP HEHEHEHE, I knew there was something special about you. That's why i tested with ' Test Test Allah Allah ' And It worked !! NIAHAHAHAHA 🌝🌝.
+                  It was a beautiful Summer day at August when our paths first crossed. Seftnaalk Follow Yalala ou Tjebdti 3linaa , ou dernaalk story reply o zedti tjebdti elinaaaaaa , BUT ZNASNI NEVER GIVE UP HEHEHEHE, I knew there was something special about you. That&apos;s why i tested with &apos; Test Test Allah Allah &apos; And It worked !! NIAHAHAHAHA 🌝🌝.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
                   Walakin Semhiliaa Rah nti li demandeti WhatsApp Ppppp .. Iwa ou tze3eeti Bayna knti Tay7aa iwa w 3tinaak nemraa w ta l9it rassi tay7 ela rasssssiii. Ou kanet A7sseen Ti7aaaaaa 🥰🥰 Iwa w lbaaa9i li Tariikh, Thank You for being Always with me! I love youuuuuuuuuu and i will be elways here for youu! i wish you a happy 23 birthdaaay with all the best and joy and all the success honey. 🥳🎉

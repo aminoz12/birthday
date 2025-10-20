@@ -20,8 +20,7 @@ export default function AudioPlayer({
   autoplay = false, 
   loop = false,
   className = "",
-  showControls = true,
-  onEnded
+  showControls = true 
 }: AudioPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
@@ -41,12 +40,11 @@ export default function AudioPlayer({
 
     const handleEnded = () => {
       setIsPlaying(false);
-      onEnded?.();
     };
 
     audio.addEventListener('ended', handleEnded);
     return () => audio.removeEventListener('ended', handleEnded);
-  }, [autoplay, currentVolume, isMuted]);
+  }, [autoplay, currentVolume, isMuted, onEnded]);
 
   const togglePlay = () => {
     const audio = audioRef.current;

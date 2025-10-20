@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import { Heart, Star } from 'lucide-react';
+// Removed unused imports
 
 interface Question {
   id: number;
@@ -96,7 +96,7 @@ export default function QuizGate() {
             💖
           </motion.div>
           <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent mb-4">
-            Welcome to Smahane's Special Day
+            Welcome to Smahane&apos;s Special Day
           </h1>
           <p className="text-gray-600 text-lg">
             Answer these questions to unlock your birthday surprise!
@@ -229,7 +229,7 @@ export default function QuizGate() {
                   😢
                 </motion.div>
                 <h3 className="text-2xl font-bold text-red-500 mb-2">Try again, my love ❤️</h3>
-                <p className="text-gray-600">Don't give up! You've got this! 💪</p>
+                <p className="text-gray-600">Don&apos;t give up! You&apos;ve got this! 💪</p>
               </motion.div>
             </motion.div>
           )}
