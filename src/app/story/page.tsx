@@ -488,8 +488,7 @@ export default function StoryPage() {
           <audio 
             id="background-music"
             autoPlay 
-            loop 
-            volume={backgroundMusicVolume}
+            loop
           >
             <source src="/Lord Huron - The Night We Met (Official Audio).mp3" type="audio/mpeg" />
           </audio>
