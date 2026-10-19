@@ -7,7 +7,7 @@ import MemoryGallery from '@/components/MemoryGallery';
 import AudioPlayer from '@/components/AudioPlayer';
 import Fireworks from '@/components/Fireworks';
 
-// All 40 WhatsApp images for our best memories
+// All 49 WhatsApp images for our best memories
 const memories = [
   {
     id: 1,
@@ -248,6 +248,60 @@ const memories = [
     src: '/WhatsApp Image 2025-10-20 at 00.22.32.jpeg',
     alt: 'Beautiful memory 40',
     caption: 'My lovely princess 👸'
+  },
+  {
+    id: 41,
+    src: '/WhatsApp Image 2026-10-20 at 01.37.55 (1).jpeg',
+    alt: 'Beautiful memory 41',
+    caption: 'Another year of beautiful memories 💕'
+  },
+  {
+    id: 42,
+    src: '/WhatsApp Image 2026-10-20 at 01.37.55.jpeg',
+    alt: 'Beautiful memory 42',
+    caption: 'Every new memory is a treasure ✨'
+  },
+  {
+    id: 43,
+    src: '/WhatsApp Image 2026-10-20 at 01.37.56 (1).jpeg',
+    alt: 'Beautiful memory 43',
+    caption: 'You make every day brighter ☀️'
+  },
+  {
+    id: 44,
+    src: '/WhatsApp Image 2026-10-20 at 01.37.56 (2).jpeg',
+    alt: 'Beautiful memory 44',
+    caption: 'More moments to keep forever 💖'
+  },
+  {
+    id: 45,
+    src: '/WhatsApp Image 2026-10-20 at 01.37.56.jpeg',
+    alt: 'Beautiful memory 45',
+    caption: 'My favorite person, always 💕'
+  },
+  {
+    id: 46,
+    src: '/WhatsApp Image 2026-10-20 at 01.37.57 (1).jpeg',
+    alt: 'Beautiful memory 46',
+    caption: 'Our story keeps getting sweeter ✨'
+  },
+  {
+    id: 47,
+    src: '/WhatsApp Image 2026-10-20 at 01.37.57 (2).jpeg',
+    alt: 'Beautiful memory 47',
+    caption: 'So many reasons to smile with you 😊'
+  },
+  {
+    id: 48,
+    src: '/WhatsApp Image 2026-10-20 at 01.37.57 (3).jpeg',
+    alt: 'Beautiful memory 48',
+    caption: 'Here is to all our memories to come 💖'
+  },
+  {
+    id: 49,
+    src: '/WhatsApp Image 2026-10-20 at 01.37.57.jpeg',
+    alt: 'Beautiful memory 49',
+    caption: 'Another birthday, the same forever love 🎂💕'
   }
 ];
 
